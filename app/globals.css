@@ -13,7 +13,12 @@
 html,
 body {
   max-width: 100vw;
+  height: 100%;
   overflow-x: hidden;
+  background: linear-gradient(111.1deg, rgb(0, 40, 70) -4.8%, rgb(255, 115, 115) 82.7%, rgb(255, 175, 123) 97.2%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 li{list-style-type: none;}
 a {

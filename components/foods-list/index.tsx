@@ -19,18 +19,19 @@ const FoodList: FunctionComponent<IParam> = ({ params }) => {
   console.log(foods);
   return (
     <div className={styles.foodListContainer}>
-      {foods.map((food) => (
-        <div className={styles.foodListContainerBox} key={food.idMeal}>
-          <Link href={`/${food.strMeal}`}>
-            <img
-              className={styles.FoodImg}
-              src={food.strMealThumb}
-              alt={food.strMeal}
-            />
-            <div>{food.strMeal}</div>
-          </Link>
-        </div>
-      ))}
+      {foods &&
+        foods.map((food) => (
+          <div className={styles.foodListContainerBox} key={food.idMeal}>
+            <Link href={`/${food.strMeal}`}>
+              <img
+                className={styles.FoodImg}
+                src={food.strMealThumb}
+                alt={food.strMeal}
+              />
+              <div>{food.strMeal}</div>
+            </Link>
+          </div>
+        ))}
     </div>
   );
 };

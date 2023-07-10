@@ -11,7 +11,6 @@ interface IProps {
 }
 const Sidebar: FunctionComponent<IProps> = ({ category }) => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
